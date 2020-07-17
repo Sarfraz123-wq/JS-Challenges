@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longest Word</title>
+</head>
+<body>
+    <script>
+        function myFunction(str)
+        {
+            let longestWord = '';
+           //for now the length is 0
+            let words = str.split(' ');
+            // For separating each word from given sentence/string
+            for(word of words){
+                // console.log(word);
+                if(word.length  > longestWord.length){
+                    longestWord = word;
+                }
+            }
+            return longestWord;
+        }
+        console.log(myFunction('My name is Sarfraz'))
+
+
+    </script>
+</body>
+</html>
